@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import userData from './seed';
+import DashBoard from './DashBoard';
+import { Routes, Route } from 'react-router-dom';
+import Workout from './Workout';
+import Nutrition from './Nutrition'
+
 
 function App() {
+  const users = JSON.parse(userData)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path='/:userId/workout' element={<Workout users={users} />} />
+        <Route path='/:userId/nutrition' element={<Nutrition users={users} />} />
+        <Route path='/' element={<DashBoard users={users} />} />
+      </Routes>
     </div>
   );
 }

@@ -1,0 +1,247 @@
+.row-container {
+    position: absolute;
+    width: 92%;
+    height: 16%;
+    left: 4%;
+    background: #1E262F;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.detail {
+    position: relative;
+    left: 3%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    width: 30%;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: start;
+}
+
+.name {
+    margin-left: 3%;
+}
+
+.name span {
+    top: 40px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    color: #BDBCBE;
+}
+
+.steps {
+    min-width: 20%;
+    height: 95%;
+    position: relative;
+    left: 2%;
+    display: flex;
+    align-items: center;
+}
+
+.steps-bar {
+    box-sizing: border-box;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.steps-bar span:nth-child(1) {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.steps-bar span:nth-child(2) {
+    font-size: 8px;
+    color: #BDBCBE;
+}
+
+.increment,
+.decrement {
+    width: 30px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    background: #101317;
+    border-radius: 4px;
+}
+
+.increment,
+.decrement:hover {
+    cursor: pointer;
+}
+
+.decrement {
+    top: 32px;
+}
+
+.increment img,
+.decrement img {
+    width: 8px;
+}
+
+.target {
+    height: 95%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    line-height: 12px;
+    font-weight: 500;
+    margin: 0 10px;
+    /* identical to box height */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: #FFFFFF;
+}
+
+.target-text {
+    margin: 0.2rem;
+    text-align: center;
+}
+
+.target-text p {
+    font-size: 16px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.target-text span {
+    font-size: 10px;
+    color: #BDBCBE;
+}
+
+
+.date {
+    min-width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.date-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+.date-text img {
+    margin-right: 7px;
+}
+
+.scheduled-date,
+.performed-date {
+    white-space: nowrap;
+    padding: 3px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.more {
+    width: 30px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #101317;
+    border-radius: 8px;
+}
+
+.more img {
+    height: 16px;
+}
+
+.more img:hover {
+    cursor: pointer;
+}
+
+.nutrition {
+    min-width: 20%;
+    height: 95%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calorie-bar {
+    max-width: 55px;
+    max-height: 55px;
+
+}
+
+.value {
+    position: relative;
+    top: -45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 12px;
+}
+
+.value span:nth-child(1) {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.value span:nth-child(2) {
+    font-size: 8px;
+    color: #BDBCBE;
+}
+
+.nutrition .target {
+    top: 20px;
+    left: 72px;
+}
+
+.nutrition .more {
+    left: 118px;
+    top: 1px;
+}
+
+.notification {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    background: #36F5C7;
+    border-radius: 8px;
+}
+
+.notification img {
+    width: 45%;
+}
+
+@media only screen and (max-width: 1300px) {
+    .target-text p {
+        font-size: 12px;
+    }
+
+    .target-text span {
+        font-size: 8px;
+    }
+
+    .performed-date,
+    .scheduled-date {
+        font-size: 0.9rem;
+    }
+
+    .date-text img {
+        width: 1.2rem;
+    }
+
+    .notification {
+        width: 30px;
+        height: 30px;
+    }
+}
